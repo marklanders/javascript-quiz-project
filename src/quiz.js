@@ -28,4 +28,4 @@ class Quiz {
   hasEnded() {
     return this.currentQuestionIndex >= this.questions.length;
   }
-
+}
