@@ -36,4 +36,11 @@ class Quiz {
       );
     }
   }
+  averageDifficulty() {
+    const totalDifficulty = this.questions.reduce(
+      (accumulator, question) => (accumulator += question.difficulty),
+      0
+    );
+    return totalDifficulty / this.questions.length;
+  }
 }
