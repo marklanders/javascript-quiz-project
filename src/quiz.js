@@ -36,4 +36,15 @@ class Quiz {
       );
     }
   }
+
+  averageDifficulty() {
+    const arrayValue = this.questions;
+    const totalDifficulthy = arrayValue.reduce((sum, array)=>sum + array.difficulty,0);
+
+    return totalDifficulthy / arrayValue.length
+
+  }
+  
 }
+
+
